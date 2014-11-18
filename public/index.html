@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" ng-app="MyApp" ng-controller="RootCtrl">
+
+<head>
+  <meta charset="utf-8">
+  <!-- If you delete this meta tag World War Z will become a reality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>textAngular Template App</title>
+
+  <!-- vendor -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+  <!-- custom -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="bower_components/modernizr/modernizr.js"></script>
+
+  <style>
+
+  </style>
+</head>
+<body>
+<!-- heading -->
+<div class="container">
+    <div class="my-header row outline-border">
+    <div class="col-lg-12">
+        <h1>textAngular Template App</h1>
+
+        <div class="nav">
+              <a href="#/">Home</a> |
+              <a href="#/items">All</a> |
+              <a href="#/items/new">New</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- content -->
+<div class="container">
+    <div class="my-content row outline-border" ng-view></div>
+</div>
+
+
+<!-- inline templates -->
+<script type="text/ng-template" id="tmpl_homepage.html">
+    <div class="col-lg-12">
+        <h2 class="subheader">{{ helloMessage }}</h2>
+        <hr/>
+    </div>
+</script>
+
+<script type="text/ng-template" id="tmpl_item_list.html">
+    <div class="col-lg-12">
+        <h2 class="subheader">{{ helloMessage }}</h2>
+        <hr/>
+    </div>
+</script>
+
+<script type="text/ng-template" id="tmpl_item_create.html">
+    <div class="col-lg-12">
+        <h2 class="subheader">{{ helloMessage }}</h2>
+        <hr/>
+
+        <text-angular></text-angular>
+        <button class="btn btn-success" ng-click="saveChanges()">Save changes</button>
+    </div>
+</script>
+
+<script type="text/ng-template" id="tmpl_404.html">
+    <div class="large-12 columns">
+        <h2 class="subheader">Oops! You found a 404</h2>
+    </div>
+</script>
+
+  <!-- ==================== JavaScripts ================== -->
+  <!-- vendor -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/textAngular/dist/textAngular-sanitize.min.js"></script>
+  <script src="bower_components/textAngular/dist/textAngular.min.js"></script>
+
+  <!-- src -->
+  <script src="js/app/app.js"></script>
+</body>
+</html>

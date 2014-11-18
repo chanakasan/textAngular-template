@@ -1,0 +1,21 @@
+.my-header {
+    margin-bottom: 20px;
+}
+
+.outline-border {
+    border: solid 1px #999;
+}
+
+.my-content {
+    height: 800px;
+    margin-bottom: 40px;
+}
+
+.ta-editor {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
+}
